@@ -1,0 +1,17 @@
+/.idea/
+/.gradle/
+/.vscode/
+.idea/
+.gradle/
+.vscode/
+
+*.class
+*.log
+*.iml
+
+out/
+build/
+logs/
+log/
+target/
+
