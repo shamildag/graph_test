@@ -17,8 +17,8 @@ public class Traversals {
             }
             log.debug(" {} -> ", vertexId);
             visited[current] = 1;
-            List<Integer> listOfNeigbors = graph.getAdjacentVertices(vertexId);
-            for(int v : listOfNeigbors) {
+            List<Integer> listOfNeighbors = graph.getAdjacentVertices(vertexId);
+            for(int v : listOfNeighbors) {
                 if (visited[v] == 1 ) {
                     queue.add(v);
                 }
@@ -32,8 +32,8 @@ public class Traversals {
             return;
         }
         visited[current] = 1;
-        List<Integer> listOfNeigbors = graph.getAdjacentVertices(current);
-        for (int vertex : listOfNeigbors) {
+        List<Integer> listOfNeighbors = graph.getAdjacentVertices(current);
+        for (int vertex : listOfNeighbors) {
             depthFirst(graph, visited, vertex);
         }
         log.debug(" {} ->", current);
